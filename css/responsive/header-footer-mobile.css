@@ -1,0 +1,35 @@
+@media screen and (max-width:768px){
+  #footer{
+    height:380px;
+  }
+  .header-list{
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -14px 9px -9px rgba(0,0,0,0.6);
+    z-index: 200;
+  }
+  .header-list li {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .header-list li img{
+    height:auto;
+    width:calc(100%5);
+  }
+  .footer-content p{
+    margin:0;
+    font-size: 0.5rem;
+    padding-top:30px;
+  }
+  .footer-nav-list a{
+    font-size: 10px;
+  }
+  .footer-nav-list li{
+    padding:0;
+  }
+}

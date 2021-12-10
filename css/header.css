@@ -1,0 +1,37 @@
+@media screen and (min-width:768px){
+  .nav ul{
+  height:100%;
+}
+.header-list{
+  background-color:#fff;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  z-index: 200;
+  box-shadow: 2px 2px 4px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header-item img{
+  height: 18vh;
+}
+.header-logo img{
+  height: 20vh;
+  width: auto;
+}
+.header-list li img:hover{
+  transition: .5s;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+  footer{
+  padding-bottom: 250px;
+  }
+.footer-content p{
+    margin-top: 20px;
+    z-index:100;
+}
+}

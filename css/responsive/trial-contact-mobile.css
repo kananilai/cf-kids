@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px){
+  form{
+    width:80%;
+    padding:10px 15px;
+  }
+  .form-item{
+    display: block;
+    width:70%;
+  }
+  .form-item-label{
+    font-size: 10px;
+  }
+  .form-item-required{
+    font-size:8px;
+  }
+}

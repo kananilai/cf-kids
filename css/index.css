@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box; 
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.class-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img{
+  width: 100%;
+}
+section{
+width :100%;
+}
+.active {
+  opacity: 0;
+}
+.visible{
+  opacity: 1;
+}
+
+
+
+.content-top{
+  font-family: 'Acme', sans-serif;
+  align-items:center;
+  text-align: center;
+  font-size: 75px;
+  border-bottom:dashed  5px  #26547C;
+  display: inline-block;
+}
+
+
+#main{
+  background: URL("../img/kids-top.png") ;
+  /* background-position: 50% 30%; */
+  background-size: cover;
+  margin:0;
+  padding:0;
+  z-index: 1;
+}
+
+#contents{
+  padding-left:18vh ;
+}
+
+/* -----------------------------Side----------------------------- */
+.side-content{
+  height: auto;
+  position: fixed;
+  right: 0;
+  bottom:18vh;
+  z-index: 110;
+}
+.side-content img{
+  width: 15vw;
+}
+
+.page-top{
+  height: auto;
+  position: fixed;
+  right: 0;
+  bottom:0;
+  z-index: 110;
+}
+.page-top img{
+  width: 7vw;
+}
+
+
+/* -----------------------------Main----------------------------- */
+
+#main{
+  background: URL("../img/kids-top.png") ;
+  /* background-position: 50% 30%; */
+  background-size: cover;
+  margin:0;
+  padding:0;
+  z-index: 1;
+}
+
+.main-top{
+  height: 900px;
+  display: flex;
+}
+
+.top-ttl{
+  text-align: center;
+  margin:0 auto;   
+  font-size: 150px;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+  color:#00bd94;
+  text-shadow: 8px 8px 1px  rgb(0, 0, 0);z-index: 1;
+  
+}
+
+.main-trial-link img{
+  height:200px;
+}
+
+
+/* -----------------------------Class----------------------------- */
+.class-top{
+  margin-bottom:30px;
+}
+.class-svg{
+  z-index: -1;
+}
+#introduce .content-top{
+  padding-top:0;
+}
+#introduce{
+  width: 100%;
+  z-index: 1;
+  padding: 30px 0;
+  
+}
+.class-ttl{
+text-align: center;
+}
+#responsive-slider {
+  margin: 0 auto;
+  width:100%;
+  background-color: #ffff00;
+  padding-bottom: 50px;;
+}
+#thumbnail {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color:#ffffff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#thumbnail li {
+  width: 100%;
+  text-align: center;
+}
+#thumbnail li a{
+  display: block;
+  padding: 15px;
+}
+
+#thumbnail li img{
+  text-align: center;
+}
+#slide{
+  text-align: center;
+  margin:20px;
+}
+.slide-top img{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.slider-img{
+height:35px;
+width:auto;
+}
+.show{
+  border-bottom:4px solid #06D6A0;
+}
+
+/* ----------------------flow---------------------------- */
+.flow-content{
+  width: 90%;
+  margin: 30px auto;
+}
+.flow-img{
+  box-shadow: 16px 20px 6px -9px rgba(0,0,0,0.6);
+  border-radius: 30px;
+}
+/* ----------------------coach---------------------------- */
+.coach-card img{
+  border-radius:15px;
+  width: 35%;
+}
+.coach-card h4{
+  font-family: 'Acme', sans-serif;
+  margin:5px;
+}
+.flex{
+  flex-flow: row-reverse;
+}
+
+#sec {
+padding: 0;
+text-align: center;
+word-wrap: break-word;
+padding-bottom:50px;
+}
+
+#sec ul {
+  margin-left:20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  border: none;
+}
+@media screen and (min-width: 767px){
+  #sec ul li {
+  padding: 20px;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+}
+
+}
+
+#sec ul li:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#sec ul li:hover span {
+  color: #63B7E6;
+}
+#sec ul li:hover p {
+  color: #555;
+}
+#sec ul li:hover .coach-name {
+  
+  color: #00ccff;
+}
+#sec ul li:hover .coach-name:after {
+  width: 25px;
+}
+#sec ul li span {
+  font-size: 2.6em;
+  display: block;
+  transition: color 0.3s;
+  color: #A2A2A2;
+}
+#sec ul li span:before, #sec ul li span:after {
+  position: static;
+}
+#sec ul li .coach-name {
+  color: #6f6f6f;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 100;
+  transition: color 0.3s;
+  padding-top:20px;
+}
+#sec ul li .coach-name:after {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  display: block;
+  width: 40px;
+  height: 1px;
+  transition: width 0.3s;
+}
+
+#sec ul li p {
+  color: #A2A2A2;
+  text-align: left;
+  line-height: 1.5;
+  transition: color 0.3s;
+  font-size:1rem;
+}
+.coach-items{
+  padding: 4vw;
+}
+
+
+
+/* -----------------------------slider----------------------------- */
+#garally ul{
+  width:100%;
+  overflow:hidden;
+}
+.slider img{
+  height:20vw ;
+  padding: 20px;
+}
+.garally-ttl{
+  text-align: center;
+  margin-bottom:100px;
+}
+/* -----------------------------insta----------------------------- */
+
+/* -----------------------------news----------------------------- */
+#news{
+  height:700px;
+  background-image: url('../img/rainbow.png');
+  background-size: cover;
+  background-position:center bottom; 
+  background-repeat:no-repeat;
+  padding-left:50px;
+}
+.news-ttl{
+  text-align: center;
+}
+.news-list{
+  text-align:center;
+  border:8px solid #996600;
+  background-color:#005555;
+  color:#f3f3f3;
+  padding:20px;
+  margin:10px;
+
+}
+.news-list li{
+  text-align: center;
+  display:block;
+}
+.news-date{
+  margin-right:30px;
+}
+.news-list{
+  width:90%;
+  margin: 10px auto;;
+}
+.news-item{
+  text-align: center;
+  font-size:20px; 
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.news-item a{
+  font-size: 1em;
+  border-bottom: dashed 2px orange;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding-left:10px;
+  padding-bottom:3px;
+  color: #fff;
+}
+
+
+/* -----------------------------trial----------------------------- */
+#trial{
+  margin:4em auto;
+  margin-bottom: 200px ;
+  padding: 1em;
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 20px 17px 10px #252525;
+  border: 5px solid #FF715B;
+  border-radius: 10px;
+}
+
+.trial-ttl{
+  text-align: center;
+  margin-top:40px;
+  font-size: 2.5em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.trial-title{
+  display: inline;
+  background: linear-gradient(transparent 60%, #ffff00 60%);
+  padding:0 0.5vw;
+}
+.trial-content{
+  display: flex;
+  justify-content: space-around;
+}
+.trial-contact  ,
+.trial-form-link{
+  margin: 20px;
+}
+.trial-contact p ,
+.trial-form-link p{
+  text-align: center;
+  line-height: 1.9;
+}
+
+.trial-contact p a,
+.trial-form-link p a{
+  color: #000000;
+}
+.trial-contact span,
+.trial-form-link span{
+  font-size: 2vw;
+}
+.trial-btn {
+  padding: 40px 30px;
+  display: inline-block;
+  margin: 0.5em 2vw;
+  background: #FF715B;
+  border: 3px solid  #000000;
+  box-shadow: 0px 7px 0 #06D6A0; 
+  border-radius: 50px;
+  font-size: 1.7vw;
+  cursor: pointer;
+
+}
+.trial-btn:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.wave{
+  width:100%;
+}
+
+
+/* -----------------------------sns----------------------------- */
+.insta {
+  text-align: center;
+  margin:50px;
+  margin-bottom: 100px;
+}
+.insta a{
+  color: #000;
+  
+}
+
+.instagram-btn{
+  background-color: rgba(245, 240, 240, 0.781);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  display: inline-block;
+  outline: 0;
+  border:0;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 30px;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 30px;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+}
+
+.instagram-btn:hover{
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
+}
